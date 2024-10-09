@@ -1,0 +1,40 @@
+.back-button {
+    display: inline-block; /* This keeps the button as an inline element */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 10px 0; /* Add some margin to separate it from other elements */
+    text-align: center; /* Ensure text is centered */
+    width: auto; /* Keep the button width auto so it only takes up space needed for the content */
+    max-width: 200px; /* Limit the maximum width */
+  }
+  
+  .back-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  .teacher-dashboard-container {
+    padding: 20px;
+    max-width: 1200px; /* Limit the max width of the content */
+    margin: 0 auto; /* Center the container on the page */
+  }
+  
+  .back-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    width: auto;
+    max-width: 200px;
+    text-align: center;
+  }
+  
+  .back-button:hover {
+    background-color: #45a049;
+  }
+  
+  

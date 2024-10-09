@@ -1,0 +1,139 @@
+/* General form styles */
+.subject-form {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+/* Form group styling */
+.subject-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.subject-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.subject-form input[type="text"],
+.subject-form input[type="number"],
+.subject-form select,
+.subject-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.subject-form input[type="text"]:focus,
+.subject-form input[type="number"]:focus,
+.subject-form select:focus,
+.subject-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Textarea specific styles */
+.subject-form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+/* Button styling */
+.subject-form button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.subject-form button:hover {
+  transform: translateY(-2px);
+}
+
+/* Save Subject button */
+.subject-form button[type="submit"] {
+  background-color: #007bff;
+}
+
+.subject-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Add Unit button */
+.subject-form button.add-unit {
+  background-color: #28a745;
+}
+
+.subject-form button.add-unit:hover {
+  background-color: #218838;
+}
+
+/* Remove Unit button */
+.subject-form button.remove-unit {
+  background-color: #dc3545;
+}
+
+.subject-form button.remove-unit:hover {
+  background-color: #c82333;
+}
+
+/* Unit group styles */
+.unit-group {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.unit-group h4 {
+  margin-top: 0;
+  color: #007bff;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .subject-form {
+      padding: 1.5rem;
+  }
+
+  .subject-form button {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+  }
+
+  .subject-form textarea {
+      height: 100px;
+  }
+}
+.close-button {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}

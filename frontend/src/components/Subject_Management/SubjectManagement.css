@@ -1,0 +1,127 @@
+/* Container for the entire Subject Management component */
+.subject-management {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f4f7f9;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the boxes containing the form toggle and subject list */
+.box {
+  flex: 1;
+  min-width: 280px;
+  margin: 1rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.box h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.box h2:hover {
+  color: #007bff;
+  transform: scale(1.05);
+}
+
+/* Container for the subject form */
+.form-container {
+  flex: 1 100%;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Subject List styling */
+.subject-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subject-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.subject-list li:hover {
+  background: #f1f3f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons for editing and deleting subjects */
+.subject-list button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.subject-list button.edit {
+  background: #ffc107;
+  color: #333;
+}
+
+.subject-list button.edit:hover {
+  background: #e0a800;
+  transform: scale(1.05);
+}
+
+.subject-list button.delete {
+  background: #dc3545;
+  color: #ffffff;
+}
+
+.subject-list button.delete:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .box {
+      margin: 0.5rem 0;
+      padding: 1rem;
+  }
+
+  .subject-management {
+      padding: 1rem;
+  }
+
+  .form-container {
+      margin-top: 0.5rem;
+      padding: 1rem;
+  }
+
+  .box h2 {
+      font-size: 1.5rem;
+  }
+}

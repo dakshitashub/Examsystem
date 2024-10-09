@@ -1,0 +1,124 @@
+/* Container for the component */
+.semester-list-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.semester-list-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* List styling */
+.semester-list-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual list item styling */
+.semester-list-container li {
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background: #fff;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.semester-list-container li:hover {
+  background: linear-gradient(145deg, #007bff, #00aaff);
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.semester-list-container li:active {
+  background: linear-gradient(145deg, #0056b3, #0073e6);
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Action selection section */
+.action-selection {
+  text-align: center;
+}
+
+.action-selection h2 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.action-selection p {
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Button styling for actions */
+.action-selection button {
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem; /* Added space between buttons */
+  border: none;
+  border-radius: 50px;
+  background: #007bff;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.action-selection button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.action-selection button:active {
+  background: #003f8f;
+  transform: translateY(0);
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+  .semester-list-container {
+    max-width: 95%;
+    padding: 1.5rem;
+  }
+
+  .semester-list-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .semester-list-container li {
+    font-size: 1rem;
+  }
+
+  .action-selection h2 {
+    font-size: 1.5rem;
+  }
+
+  .action-selection button {
+    font-size: 1rem;
+  }
+}
